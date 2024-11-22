@@ -4,3 +4,8 @@
 const texto = document.querySelector ("#ejemplos")
 let isMember = false
 texto.innerHTML = "La cuota es de:" + (isMember ? "$2.00":"10.00")
+
+// ejemplo2: asignando valores dependiendo del resultado de la condicion ternaria
+let elvisLives = Math.PI > 4 ? "Sip" : "Nop"
+console.log (elvisLives)
+ 
