@@ -26,3 +26,21 @@ let stop = false,
 age = 15
 age > 18 ? location.assign ("continue.html") : (stop = true)
 console.log (stop)
+
+// ejemplo5: realizando más de una operación por caso, separándolas con una coma
+let stop2 = false,
+age2 = 14
+
+age2 > 18
+? (alert ("OK, puedes continuar"), location.assign("continue.html"))
+: ((stop2=true), alert ("Disculpa, eres menor de edad!"))
+
+//ejemplo6: realizando más de una operación durante la asignación de un valor, el último valor separado por una coma del paréntesis será el valor asignado
+let age3 = 16
+let url = 
+age > 18
+? (alert ("OK, puedes continuar"),"continue.html")
+// alert devuelve "undefined", pero será ingnorado porque no es el ultimo valor separado por comas del paréntesis
+: (alert ("Eres menor de edad"),
+alert ("Disculpa"),"stop.html")
+location.assign(url)
