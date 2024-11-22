@@ -19,3 +19,10 @@ access = firstCheck
 : "acceso permitido" 
 
 console.log (access)
+
+// ejemplo4: usando operadores ternarios en espacio vacio con el propósito de realizar diferentes operaciones
+
+let stop = false,
+age = 15
+age > 18 ? location.assign ("continue.html") : (stop = true)
+console.log (stop)
