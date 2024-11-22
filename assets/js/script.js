@@ -9,3 +9,13 @@ texto.innerHTML = "La cuota es de:" + (isMember ? "$2.00":"10.00")
 let elvisLives = Math.PI > 4 ? "Sip" : "Nop"
 console.log (elvisLives)
  
+// ejemplo3: realizando evaluaciones ternarias múltiples (el operador condicional es asociativo)
+let firstCheck = false,
+secondCheck = false,
+access = firstCheck 
+? "acceso denegado"
+: secondCheck
+? "acceso denegado"
+: "acceso permitido" 
+
+console.log (access)
